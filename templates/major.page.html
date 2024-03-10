@@ -1,0 +1,46 @@
+{{template "base" .}}
+
+{{define "content"}}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="/static/images/marjors-suite.png" class="img-fluid img-thumbnail mx-auto d-block room-img" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-5">Major's Suite</h1>
+            <p class="text-center">Your home away from home, set on the majestic waters of the Atlantic Ocean, this will be a vacation to remember. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, quasi reiciendis repellat incidunt illum deserunt perspiciatis provident accusamus esse nisi perferendis, ducimus voluptatibus eaque omnis suscipit. Libero velit, animi soluta laboriosam temporibus quo esse alias voluptatibus nobis saepe repellat perferendis error dolore necessitatibus nulla architecto odio nihil, in earum? Officiis?</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a id="check-availability-btn" href="#!" class="btn btn-success">Check Avalability</a>      </div>
+    </div>
+</div>
+{{end}}
+
+{{define "js"}}
+<script>
+    document.getElementById("check-availability-btn").addEventListener("click", function () {
+        let html = `
+      <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">
+        <div class="row">
+          <div class="col">
+            <div class="row" id="reservation-dates-modal">
+              <div class="col">
+                <input disabled required class="for-control" type="text" name="start" id="start" placeholder="Arrival">
+              </div>
+              <div class="col">
+                <input disabled required class="for-control" type="text" name="end" id="end" placeholder="Departure">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      `
+        attention.custom({ msg: html, title: "Choose Your dates" });
+
+    })
+</script>
+{{end}}
