@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/n0n0bt/bookings/pkg/config"
-	"github.com/n0n0bt/bookings/pkg/models"
-	"github.com/n0n0bt/bookings/pkg/render"
+	"github.com/n0n0bt/bookings/internal/config"
+	"github.com/n0n0bt/bookings/internal/models"
+	"github.com/n0n0bt/bookings/internal/render"
 )
 
 // Repo the repository used by the handlers
@@ -100,7 +100,6 @@ func (m *Repository) AvailabilityJSON(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-	log.Println(string(out))
 	w.Header().Set("Content-Type", "apllication/json")
 	w.Write(out)
 }
