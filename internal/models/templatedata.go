@@ -1,5 +1,7 @@
 package models
 
+import "github.com/n0n0bt/bookings/internal/forms"
+
 // TemplateData is a shared struct used for rendering templates
 type TemplateData struct {
 	StringMap map[string]string
@@ -10,4 +12,5 @@ type TemplateData struct {
 	Flash     string
 	Warning   string
 	Error     string
+	Form *forms.Form
 }
