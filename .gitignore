@@ -1,1 +1,5 @@
 .DS_Store
+database.yml
+.idea
+run.sh
+database.yml

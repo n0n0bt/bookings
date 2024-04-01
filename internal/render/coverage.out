@@ -1,0 +1,23 @@
+mode: set
+github.com/n0n0bt/bookings/internal/render/render.go:22.40,24.2 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:26.84,32.2 5 1
+github.com/n0n0bt/bookings/internal/render/render.go:35.105,39.18 2 1
+github.com/n0n0bt/bookings/internal/render/render.go:39.18,42.3 1 0
+github.com/n0n0bt/bookings/internal/render/render.go:42.8,44.3 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:47.2,48.9 2 1
+github.com/n0n0bt/bookings/internal/render/render.go:48.9,51.3 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:53.2,62.16 5 1
+github.com/n0n0bt/bookings/internal/render/render.go:62.16,65.3 2 0
+github.com/n0n0bt/bookings/internal/render/render.go:67.2,67.12 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:71.67,77.16 3 1
+github.com/n0n0bt/bookings/internal/render/render.go:77.16,79.3 1 0
+github.com/n0n0bt/bookings/internal/render/render.go:83.2,83.29 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:83.29,87.17 3 1
+github.com/n0n0bt/bookings/internal/render/render.go:87.17,89.4 1 0
+github.com/n0n0bt/bookings/internal/render/render.go:91.3,92.17 2 1
+github.com/n0n0bt/bookings/internal/render/render.go:92.17,94.4 1 0
+github.com/n0n0bt/bookings/internal/render/render.go:96.3,96.23 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:96.23,98.18 2 1
+github.com/n0n0bt/bookings/internal/render/render.go:98.18,100.5 1 0
+github.com/n0n0bt/bookings/internal/render/render.go:103.3,103.21 1 1
+github.com/n0n0bt/bookings/internal/render/render.go:106.2,106.21 1 1
