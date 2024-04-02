@@ -1,18 +1,20 @@
 package main
 
 import (
+	"database/sql/driver"
 	"encoding/gob"
 	"fmt"
+	"log"
+	"net/http"
+	"os"
+	"time"
+
 	"github.com/alexedwards/scs/v2"
 	"github.com/n0n0bt/bookings/internal/config"
 	"github.com/n0n0bt/bookings/internal/handlers"
 	"github.com/n0n0bt/bookings/internal/helpers"
 	"github.com/n0n0bt/bookings/internal/models"
 	"github.com/n0n0bt/bookings/internal/render"
-	"log"
-	"net/http"
-	"os"
-	"time"
 )
 
 const portNumber = ":80"
@@ -63,6 +65,10 @@ func run() error {
 	session.Cookie.Secure = app.InProduction
 
 	app.Session = session
+
+	// connect to database
+	log.Println("Connecting to database...")
+	db, err := driver.ConnectSQL("")
 
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
