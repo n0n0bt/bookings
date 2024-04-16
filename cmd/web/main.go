@@ -10,14 +10,14 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/n0n0bt/bookings/internal/config"
+	"github.com/n0n0bt/bookings/internal/driver"
 	"github.com/n0n0bt/bookings/internal/handlers"
 	"github.com/n0n0bt/bookings/internal/helpers"
 	"github.com/n0n0bt/bookings/internal/models"
 	"github.com/n0n0bt/bookings/internal/render"
-	"github.com/n0n0bt/bookings/internal/driver"
 )
 
-const portNumber = ":80"
+const portNumber = ":8080"
 
 var app config.AppConfig
 var session *scs.SessionManager
@@ -79,7 +79,6 @@ func run() (*driver.DB, error) {
 	}
 
 	log.Println("Connected to database!")
-
 
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
