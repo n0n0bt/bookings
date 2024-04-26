@@ -67,7 +67,7 @@ func getSession() (*http.Request, error) {
 }
 
 func TestNewTemplates(t *testing.T){
-	Template(app)
+	NewRenderer(app)
 }
 func TestCreateTemplateCache(t *testing.T) {
 	pathToTemplates = "./../../templates"
